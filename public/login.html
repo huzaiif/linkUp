@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LinkUp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="images/linkup-logo.png" alt="LinkUp Logo">
+            <h2>Log In</h2>
+            <input type="email" id="login-email" placeholder="Email Address">
+            <input type="password" id="login-password" placeholder="Password">
+            <button
+                onclick="login(document.getElementById('login-email').value, document.getElementById('login-password').value)">Log
+                In</button>
+            <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+            <p>Or <a href="#" onclick="guestLogin()">Continue as Guest</a></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

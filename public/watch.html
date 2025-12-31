@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch - LinkUp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body onload="checkAuth()">
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="images/linkup-logo.png" class="logo">
+            </a>
+            <ul>
+                <li><a href="notifications.html"><i class="fas fa-bell"></i></a></li>
+                <li><a href="messages.html"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="watch.html" class="active-nav"><i class="fas fa-video"></i></a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <i class="fas fa-search" style="color:var(--text-muted); padding-left:15px;"></i>
+                <input type="text" placeholder="search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.jpg" class="user-pic-display">
+            </div>
+        </div>
+        <div class="settings-menu">
+            <div id="darkbtn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <div>
+                        <p class="user-name-display">Huz Aif</p>
+                        <a href="profile.html">see your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#" onclick="logout()">Sign Out <img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="watch-container">
+        <div class="upload-section">
+            <button class="upload-btn"><i class="fas fa-upload"></i> Upload Video</button>
+        </div>
+        <div class="video-feed">
+            <div class="video-card">
+                <div class="video-preview">
+                    <img src="images/thumb-1920-476725.jpg" alt="Video Thumbnail">
+                    <i class="fas fa-play-circle"></i>
+                </div>
+                <div class="video-info">
+                    <img src="images/member-1.png" class="video-author-img">
+                    <div class="video-details">
+                        <h4>Best Coding Setup for 2024</h4>
+                        <p>Tech Reviewer</p>
+                        <span>100k Views &bull; 2 days ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-preview">
+                    <img src="images/buggatti1.jpg" alt="Video Thumbnail">
+                    <i class="fas fa-play-circle"></i>
+                </div>
+                <div class="video-info">
+                    <img src="images/member-2.png" class="video-author-img">
+                    <div class="video-details">
+                        <h4>New Bugatti Speed Test</h4>
+                        <p>Supercar Blondie</p>
+                        <span>2M Views &bull; 1 week ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-preview">
+                    <img src="images/paris.jpg" alt="Video Thumbnail">
+                    <i class="fas fa-play-circle"></i>
+                </div>
+                <div class="video-info">
+                    <img src="images/member-3.png" class="video-author-img">
+                    <div class="video-details">
+                        <h4>Vlog: Trip to Paris</h4>
+                        <p>Travel With Me</p>
+                        <span>50k Views &bull; 3 days ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

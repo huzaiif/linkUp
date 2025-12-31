@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - LinkUp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="register-container">
+        <div class="register-box">
+            <img src="images/linkup-logo.png" alt="LinkUp Logo">
+            <h2>Sign Up</h2>
+            <input type="text" id="reg-name" placeholder="Full Name">
+            <input type="email" id="reg-email" placeholder="Email Address">
+            <input type="password" id="reg-password" placeholder="Password">
+            <button
+                onclick="register(document.getElementById('reg-name').value, document.getElementById('reg-email').value, document.getElementById('reg-password').value)">Register</button>
+            <p>Already have an account? <a href="login.html">Log In</a></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

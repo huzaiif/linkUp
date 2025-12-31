@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - LinkUp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body onload="checkAuth()">
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="images/linkup-logo.png" class="logo">
+            </a>
+            <ul>
+                <li><a href="notifications.html"><i class="fas fa-bell"></i></a></li>
+                <li><a href="messages.html" class="active-nav"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="watch.html"><i class="fas fa-video"></i></a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <i class="fas fa-search" style="color:var(--text-muted); padding-left:15px;"></i>
+                <input type="text" placeholder="search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.jpg" class="user-pic-display">
+            </div>
+        </div>
+        <div class="settings-menu">
+            <div id="darkbtn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <div>
+                        <p class="user-name-display">Huz Aif</p>
+                        <a href="profile.html">see your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#" onclick="logout()">Sign Out <img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="msg-container">
+        <div class="msg-list">
+            <div class="msg-search">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search messages...">
+            </div>
+            <div class="msg-item active">
+                <img src="images/member-1.png">
+                <div class="msg-details">
+                    <p>John Doe</p>
+                    <span>You: Hey, how are you?</span>
+                </div>
+            </div>
+            <div class="msg-item">
+                <img src="images/member-2.png">
+                <div class="msg-details">
+                    <p>Elon Musk</p>
+                    <span>Elon: I'm buying Twitter lol</span>
+                </div>
+            </div>
+        </div>
+        <div class="msg-window">
+            <div class="msg-header">
+                <img src="images/member-1.png">
+                <div class="msg-header-info">
+                    <h4>John Doe</h4>
+                    <span>Online</span>
+                </div>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+            <div class="msg-content">
+                <div class="message received">
+                    <p>Hi there! How's the project going?</p>
+                    <span>10:30 AM</span>
+                </div>
+                <div class="message sent">
+                    <p>Going great! Just fixing some UI issues.</p>
+                    <span>10:32 AM</span>
+                </div>
+            </div>
+            <div class="msg-input-area">
+                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-image"></i>
+                <input type="text" placeholder="Type a message...">
+                <i class="fas fa-paper-plane"></i>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
